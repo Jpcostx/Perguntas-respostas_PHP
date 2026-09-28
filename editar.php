@@ -20,7 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($correta === null) {
         $erro = "Selecione a resposta correta.";
     } else {
-        // Atualizar Ficheiro de Perguntas
         $linhas_p = file($arq_perguntas, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         $novas_p = [];
         foreach ($linhas_p as $l) {
@@ -34,7 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         file_put_contents($arq_perguntas, implode(PHP_EOL, $novas_p) . PHP_EOL);
 
-        // Atualizar Ficheiro de Respostas
         $linhas_r = file($arq_respostas, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         $novas_r = [];
         
