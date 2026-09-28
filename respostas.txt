@@ -1,0 +1,8 @@
+9;1;Pedro Álvares Cabral;1
+10;1;Cristóvão Colombo;0
+11;1;Dom Pedro I;0
+12;1;Vasco da Gama;0
+13;2;Arrascaeta;1
+14;2;Pedro;0
+15;2;Bruno Henrique;0
+16;2;Paquetá;0
